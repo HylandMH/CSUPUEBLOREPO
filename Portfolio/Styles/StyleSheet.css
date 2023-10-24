@@ -1,0 +1,94 @@
+/**************************************************
+    *Main CSS file for site
+    10/22/23
+    Author: Max Hyland
+*************************************************/
+
+:root {
+    --global-color-1: #80000;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 100%;
+    margin-left: 10px;
+}
+
+a:focus,
+a:hover {
+font-style: italic;
+}
+
+/* styling for header element */
+
+header h2{
+    font-size: 175%;
+    color: var(--global-color-1);
+  text-indent: 30px;
+}
+
+header h3 {
+  font-size: 130%;
+  font-style: italic;
+  text-indent: 30px;
+}
+
+header img {
+  max-width: 100%;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.shadow {
+  text-shadow: 2px 2px 2px var(--global-color-1);
+}
+
+/* The styles for the main section */
+
+main {
+  text-align: center;
+}
+
+main h1 {
+  font-size: 150%;
+}
+
+main h2 {
+  font-size: 130%;
+  color: var(--global-color-1);
+}
+
+main img {
+  max-width: 70%;
+
+}
+/* styling for div element */
+
+div {
+  font-size: 125%;
+}
+
+/* styling for nav element */
+
+nav {
+  ul {
+    list-style-type: none;
+  }
+}
+ 
+nav img {
+  max-width: 30%;
+}
+
+/* styling for footer element */
+
+footer p {
+  text-align: center;
+}
+
+
+/* Styles blow are for specifc webpages for unqiue qualities */
+
+
+

@@ -8,11 +8,14 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>My Personal Webpage!</title>
 </head>
+<link rel="stylesheet" href="Styles/StyleSheet.css"> 
+
 <body>
     <header>
+        
         <h1>Max Hyland</h1>
         <h1>Arapahoe Community College Graduate, Colorado State University - Pueblo student, and Martial Artist </h1>
-        <img src="Images/MeIguess.jpg" alt="Picture of myself I took in Kansas 2022" width="300" height="400">
+        <img src="Images/MeIguess.jpg" alt="Picture of myself I took in Kansas 2022">
         <!-- Add a self image here (Something stock for now but a more professional photo in the future) -->
     </header>
 
@@ -35,15 +38,72 @@
             <p><a href="InDepthBIO.html">For more information about me, click here!</a></p>
         </section>
     </main>
+<!-- style Module for interacting with pictures below -->
+    <style>
+        .container {
+          position: relative;
+          width: 50%;
+        }
+        
+        .image {
+          opacity: 1;
+          display: block;
+          width: 100%;
+          height: auto;
+          transition: .5s ease;
+          backface-visibility: hidden;
+        }
+        
+        .middle {
+          transition: .5s ease;
+          opacity: 0;
+          position: absolute;
+          top: 50%;
+          left: 50%;
+          transform: translate(-50%, -50%);
+          -ms-transform: translate(-50%, -50%);
+          text-align: center;
+        }
+        
+        .container:hover .image {
+          opacity: 0.3;
+        }
+        
+        .container:hover .middle {
+          opacity: 1;
+        }
+        
+        .text {
+          background-color: #04AA6D;
+          color: white;
+          font-size: 16px;
+          padding: 16px 32px;
+        }
+        </style>
 
     <nav>
-        <h2>Projects That I've Done!</h2>
-        <ul>
-            <li><a href="Project1.html"> <img src="Images/Masterstestphoto.JPG" alt="Photo from my masters test" width="500" height="400"></a></li>
-            <li><a href="Project2.html"><img src="Images/NewWorkstationProject.png" alt="Base image for creating an entire workstation with Meraki Firewall intigration as well." width="500" height="400"></a></li>
-            <li><a href="Project3.html"><img src="Images/Pentesting.jpg" alt="Base image for mock Pentesting for a college class." width="500" height="400"></a></li>
-            <li><a href="https://github.com/HylandMH"><img src="Images/GitHub-Mark.png" alt="Link for my GitHub account."></a></li>
-        </ul>
+        
+            <h2>Projects That I've Done!</h2>
+            <ul>
+               <div class = "container">
+                 <li><a href="Project1.html"> <img src="Images/Masterstestphoto.JPG" alt="Photo from my masters test" ></a></li>
+                <div class = "middle">
+                    <div class = "text">Masters test</div>
+                </div>
+                </div>
+                <div class = "container">
+                <li><a href="Project2.html"><img src="Images/NewWorkstationProject.png" alt="Base image for creating an entire workstation with Meraki Firewall intigration as well."></a></li>
+                <div class = "middle">
+                    <div class = "text">Work Station Project</div>
+                </div>
+                </div>
+                <div class = "container">
+                <li><a href="Project3.html"><img src="Images/Pentesting.jpg" alt="Base image for mock Pentesting for a college class."></a></li>
+                <div class = "middle">
+                    <div class = "text">Pentesting Class Project</div>
+                </div>
+            </ul>
+        </div>
     </nav>
 
     <footer>
@@ -52,4 +112,4 @@
         
     </footer>
 </body>
-</html>
+</html> 
