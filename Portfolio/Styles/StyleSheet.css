@@ -14,6 +14,8 @@ body {
     margin-left: 10px;
 }
 
+
+/* Move this below to desktop since it will be utilized */
 a:focus,
 a:hover {
 font-style: italic;
@@ -71,14 +73,13 @@ div {
 
 /* styling for nav element */
 
-nav {
-  ul {
-    list-style-type: none;
-  }
+nav ul {
+
+  list-style-type: none;
 }
  
 nav img {
-  max-width: 30%;
+  max-width: 40%;
 }
 
 /* styling for footer element */
@@ -92,3 +93,20 @@ footer p {
 
 
 
+/* Tablet Viewport */
+
+/* .mobile (
+* display: none;)
+
+.tablet (
+  display: block; )
+
+* inline for picture list
+
+/* Desktop Viewport */
+
+/* .mobile (
+  * display: none;)
+
+/* .Desktop (
+  * display: block;)
