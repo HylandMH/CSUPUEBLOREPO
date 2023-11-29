@@ -8,18 +8,50 @@
     --global-color-1: #80000;
 }
 
+/* Ensuring every thing can conform to sizing */
+* {
+  box-sizing: border-box;
+}
+
+/* Base Body */
 body {
     font-family: Arial, Helvetica, sans-serif;
     font-size: 100%;
+    color:whitesmoke;
     margin-left: 10px;
+    background-color: black;
+}
+
+/*Top nav - styling (Mobile) */
+
+#dc-brand {
+  z-index:2;
 }
 
 
-/* Move this below to desktop since it will be utilized */
-a:focus,
-a:hover {
-font-style: italic;
+.mobile-nav {
+  position:sticky;
+  z-index: 3;
 }
+
+.mobile-nav a {
+  color: #fff;
+  text-align: center;
+  text-decoration:none;
+  font-size: 20px;
+  display:block;
+  padding: 0.6em;
+  border: 1.5px solid rgb(49, 48, 48);
+}
+
+.mobile-nav a.mobile-menu-icon {
+  color:rgb(83, 13, 13);
+  display: block;
+  position:fixed;
+  right: 0;
+  top: 0;
+}
+
 
 /* styling for header element */
 
@@ -36,6 +68,7 @@ header h3 {
 }
 
 header img {
+  padding-top: 1em;
   max-width: 100%;
   display: block;
   margin-left: auto;
@@ -72,14 +105,16 @@ div {
 }
 
 /* styling for nav element */
-
+nav h1 {
+  text-align: center;
+}
 nav ul {
 
   list-style-type: none;
 }
  
 nav img {
-  max-width: 40%;
+  max-width: 70%;
 }
 
 /* styling for footer element */
@@ -89,7 +124,14 @@ footer p {
 }
 
 
-/* Styles blow are for specifc webpages for unqiue qualities */
+/*.tablet-desktop, #menu-links {
+  display:none;
+}
+
+.mobile, .mobile-nav {
+  display:block;
+} 
+
 
 
 
@@ -104,6 +146,52 @@ footer p {
 * inline for picture list
 
 /* Desktop Viewport */
+
+/* Move this below to desktop since it will be utilized
+a:focus,
+a:hover {
+font-style: italic;
+} */
+/* Styling for container on hovering link images
+.container {
+  position: relative;
+  width: 50%;
+}
+
+.image {
+  opacity: 1;
+  display: block;
+  width: 100%;
+  height: auto;
+  transition: .5s ease;
+  backface-visibility: hidden;
+}
+
+.middle {
+  transition: .5s ease;
+  opacity: 0;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+.container:hover .image {
+  opacity: 0.3;
+}
+
+.container:hover .middle {
+  opacity: 1;
+}
+
+.text {
+  background-color: #04AA6D;
+  color: white;
+  font-size: 16px;
+  padding: 16px 32px;
+}
 
 /* .mobile (
   * display: none;)
