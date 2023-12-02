@@ -8,6 +8,8 @@
     --global-color-1: #80000;
 }
 
+@import url(https://use.typekit.net/bbs5dyd.css);
+
 /* Ensuring every thing can conform to sizing */
 * {
   box-sizing: border-box;
@@ -15,7 +17,8 @@
 
 /* Base Body */
 body {
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: "lato", sans-serif;
+    font-style: normal;
     font-size: 100%;
     color:whitesmoke;
     margin-left: 10px;
@@ -68,6 +71,7 @@ header h3 {
 }
 
 header img {
+  border-radius: 20%;
   padding-top: 1em;
   max-width: 100%;
   display: block;
