@@ -8,8 +8,6 @@
     --global-color-1: #80000;
 }
 
-@import url(https://use.typekit.net/bbs5dyd.css);
-
 /* Ensuring every thing can conform to sizing */
 * {
   box-sizing: border-box;
@@ -17,7 +15,7 @@
 
 /* Base Body */
 body {
-    font-family: "lato", sans-serif;
+    font-family: Arial, Helvetica, sans-serif, sans-serif;
     font-style: normal;
     font-size: 100%;
     color:whitesmoke;
@@ -25,7 +23,7 @@ body {
     background-color: black;
 }
 
-/*Top nav - styling (Mobile) */
+/*Nav - styling (Mobile) */
 
 #dc-brand {
   z-index:2;
@@ -47,16 +45,12 @@ body {
   border: 1.5px solid rgb(49, 48, 48);
 }
 
-.mobile-nav a.mobile-menu-icon {
-  color:rgb(83, 13, 13);
-  display: block;
-  position:fixed;
-  right: 0;
-  top: 0;
-}
-
 
 /* styling for header element */
+
+header h1{
+  text-align: center;
+}
 
 header h2{
     font-size: 175%;
@@ -72,7 +66,7 @@ header h3 {
 
 header img {
   border-radius: 20%;
-  padding-top: 1em;
+  padding-top: 3em;
   max-width: 100%;
   display: block;
   margin-left: auto;
@@ -118,87 +112,131 @@ nav ul {
 }
  
 nav img {
-  max-width: 70%;
+  max-width: 40%;
 }
 
 /* styling for footer element */
 
-footer p {
+footer {
   text-align: center;
+  display: block;
+}
+
+/* Contact list styling */
+
+.contact ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #333;
+}
+
+.contact li a {
+  display: block;
+  color: orange;
+  text-align: center;
+  padding: 14px 16px;
+  border: 1.5px solid #111;
 }
 
 
-/*.tablet-desktop, #menu-links {
+.Desk-Tab-nav, .top-nav-list {
   display:none;
 }
 
-.mobile, .mobile-nav {
+.mobile-nav, #menu-lists {
   display:block;
-} 
-
-
-
+}
 
 /* Tablet Viewport */
 
-/* .mobile (
-* display: none;)
+@media screen and (min-width: 694px) {
 
-.tablet (
-  display: block; )
+  /* Tablet Nav Styling */
+  .Desk-Tab-nav, .top-nav-list {
+    display:block;
+  }
+  
+  .mobile-nav, #menu-lists{
+    display:none;
+  } 
+  
+  .top-nav-list ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #333;
+  }
 
-* inline for picture list
+  .top-nav-list li {
+    float: left;
+  }
+
+  .top-nav-list li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+  }
+
+  .top-nav-list li a:hover {
+    background-color: #111;
+  }
+
+  .active {
+    background-color: orange;
+  }
+  
+}
 
 /* Desktop Viewport */
 
-/* Move this below to desktop since it will be utilized
-a:focus,
-a:hover {
-font-style: italic;
-} */
-/* Styling for container on hovering link images
-.container {
-  position: relative;
-  width: 50%;
+@media screen and (min-width:780px) {
+  a:focus,
+  a:hover {
+  font-style: italic;
+  }
+
+  .container {
+    position: relative;
+    width: 50%;
+  }
+
+  .image {
+    opacity: 1;
+    display: block;
+    width: 100%;
+    height: auto;
+    transition: .5s ease;
+    backface-visibility: hidden;
+  }
+
+  .middle {
+    transition: .5s ease;
+    opacity: 0;
+    position: absolute;
+    top: 50%;
+    left: 80%;
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    text-align: center;
+  }
+
+  .container:hover .image {
+    opacity: 0.3;
+  }
+
+  .container:hover .middle {
+    opacity: 1;
+  }
+
+  .text {
+    background-color: orange;
+    color: white;
+    font-size: 30px;
+    padding: 16px 32px;
+  }
 }
-
-.image {
-  opacity: 1;
-  display: block;
-  width: 100%;
-  height: auto;
-  transition: .5s ease;
-  backface-visibility: hidden;
-}
-
-.middle {
-  transition: .5s ease;
-  opacity: 0;
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  -ms-transform: translate(-50%, -50%);
-  text-align: center;
-}
-
-.container:hover .image {
-  opacity: 0.3;
-}
-
-.container:hover .middle {
-  opacity: 1;
-}
-
-.text {
-  background-color: #04AA6D;
-  color: white;
-  font-size: 16px;
-  padding: 16px 32px;
-}
-
-/* .mobile (
-  * display: none;)
-
-/* .Desktop (
-  * display: block;)

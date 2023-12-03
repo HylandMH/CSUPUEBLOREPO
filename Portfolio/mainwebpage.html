@@ -1,36 +1,51 @@
 <!DOCTYPE html>
 
 <!-- Max Hyland, Portfolio, 10-18-2023 -->
-<link rel="stylesheet" href="Styles/StyleSheet.css">
-<link rel="stylesheet" href="https://fonts.google.com/specimen/Lato">
-<html lang="en">
+<html lang="en"></html>
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>My Personal Webpage!</title>
+    <link rel="stylesheet" href="Styles/StyleSheet.css">
 </head> 
 
+
 <body>
-    <nav id="mobile-nav-menu" class="mobile-nav">
+    <header>
         <h1>Max Hyland</h1>
+    </header>
+    <!-- Moblie Nav -->
+    <nav id="mobile-nav-menu" class="mobile-nav">
+
         <div id="menu-links">
             <a href="mainwebpage.html">Home</a>
-             <a href="InDepthBIO.html">About Me</a>
-             <a href="Project1.html">Masters</a>
-             <a href="Project2.html">Workstation</a>
-             <a href="Project3.html">Pentesting</a>        
-             <a href="Contact.html">Reach Out</a>
+            <a href="InDepthBIO.html">About Me</a>
+            <a href="Project1.html">Masters</a>
+            <a href="Project2.html">Workstation</a>
+            <a href="Project3.html">Pentesting</a>        
+            <a href="Contact.html">Contact</a>
         </div>
+    </nav>
 
+    <!-- Desktop & Tablet Nav -->
+    <nav class="Desk-Tab-Nav">
+        <div class="top-nav-list">
+            <ul>
+                <li><a href="mainwebpage.html">Home</a></li>
+                <li><a href="InDepthBIO.html">About Me</a></li>
+                <li><a href="Project1.html">Masters</a></li>
+                <li><a href="Project2.html">Workstation</a></li>
+                <li><a href="Project3.html">Pentesting</a></li>  
+                <li style="float: right;"><a class="active" href="Contact.html">Contact</a></li>
+            </ul>
+        </div>    
+    </nav>
+    <!-- Header Image -->
     <header>
         <img src="Images/MeIguess.jpg" alt="Picture of myself I took in Kansas 2022">
     </header>
 
-    <!-- Create seperate webpage for contact info (email, GitHub, LinkedIn) Base info inorder to get in contact -->
-    <!--<div>
-        <h2><a href="Contact.html">Contact Info!</a></h2>
-    </div>
-    (Old Contact link - now changing to top nav) -->
+    <!-- Main -->
     <main>
         <section>
             <h2>&clubs; About Me &clubs;</h2>
@@ -40,48 +55,6 @@
             <!--<p><a href="InDepthBIO.html">For more information about me, click here!</a></p> (Removing for top nav) -->
         </section>
     </main>
-<!-- style Module for interacting with pictures below -->
-    <style>
-        .container {
-          position: relative;
-          width: 50%;
-        }
-        
-        .image {
-          opacity: 1;
-          display: block;
-          width: 100%;
-          height: auto;
-          transition: .5s ease;
-          backface-visibility: hidden;
-        }
-        
-        .middle {
-          transition: .5s ease;
-          opacity: 0;
-          position: absolute;
-          top: 50%;
-          left: 50%;
-          transform: translate(-50%, -50%);
-          -ms-transform: translate(-50%, -50%);
-          text-align: center;
-        }
-        
-        .container:hover .image {
-          opacity: 0.3;
-        }
-        
-        .container:hover .middle {
-          opacity: 1;
-        }
-        
-        .text {
-          background-color: #04AA6D;
-          color: white;
-          font-size: 16px;
-          padding: 16px 32px;
-        }
-        </style>
 
     <nav>
         
@@ -105,11 +78,10 @@
                     <div class = "text">Pentesting Class Project</div>
                 </div>
             </ul>
-        </div>
     </nav>
 
     <footer>
-        <p><a href="mailto:mh.hyland@pack.csupueblo.edu">mh.hyland@pack.csupueblo.edu</a></p>
+        <p><a style="color: orange;" href="mailto:mh.hyland@pack.csupueblo.edu">mh.hyland@pack.csupueblo.edu</a></p>
         <p>&copy; 2023 Created by Max Hyland</p>
         
     </footer>
