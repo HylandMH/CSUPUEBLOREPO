@@ -140,7 +140,7 @@ footer {
   border: 1.5px solid #111;
 }
 
-/* Style for table in "InDepthBIO"*/
+/* Style for table in "InDepthBIO" for all view ports*/
 table {
   display: flex;
   justify-content: center;
