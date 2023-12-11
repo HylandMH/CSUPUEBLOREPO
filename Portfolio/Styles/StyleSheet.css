@@ -15,7 +15,7 @@
 
 /* Base Body */
 body {
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: Verdana,Arial, Helvetica, sans-serif;
     font-style: normal;
     font-size: 100%;
     color:whitesmoke;
@@ -54,8 +54,8 @@ header h1{
 }
 
 header h2{
-    font-size: 175%;
-    color: var(--global-color-1);
+  font-size: 175%;
+  color: var(--global-color-1);
   text-indent: 30px;
 }
 
@@ -147,6 +147,15 @@ footer a:visited {
   padding: 14px 16px;
   border: 1.5px solid #111;
 }
+
+/* Style for Google Maps item*/
+
+iframe {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
 
 /* Style for table in "InDepthBIO" for all view ports*/
 table {
