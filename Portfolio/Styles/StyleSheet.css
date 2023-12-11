@@ -123,6 +123,13 @@ footer {
   display: block;
 }
 
+footer a:link {
+  color: aqua;
+}
+footer a:visited {
+  color: aqua;
+}
+
 /* Contact list styling */
 
 .contact ul {
