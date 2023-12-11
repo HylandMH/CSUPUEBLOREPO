@@ -15,36 +15,37 @@
 
 /* Base Body */
 body {
-    font-family: Arial, Helvetica, sans-serif, sans-serif;
+    font-family: Arial, Helvetica, sans-serif;
     font-style: normal;
     font-size: 100%;
     color:whitesmoke;
     margin-left: 10px;
     background-color: black;
 }
-
-/*Nav - styling (Mobile) */
-
-#dc-brand {
-  z-index:2;
-}
-
+/* Hamburger */
 
 .mobile-nav {
-  position:sticky;
-  z-index: 3;
+  overflow: hidden;
+  background-color: #333;
+  position: relative;
 }
 
 .mobile-nav a {
-  color: #fff;
-  text-align: center;
-  text-decoration:none;
-  font-size: 20px;
-  display:block;
-  padding: 0.6em;
-  border: 1.5px solid rgb(49, 48, 48);
+  color: white;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+  display: block;
 }
 
+.mobile-nav a.icon {
+  background: orange;
+  color: white;
+  display: block;
+  position: absolute;
+  right: 0;
+  top: 0;
+}
 
 /* styling for header element */
 
@@ -175,10 +176,6 @@ input[type=text] {
 
 .Desk-Tab-nav, .top-nav-list {
   display:none;
-}
-
-.mobile-nav, #menu-lists {
-  display:block;
 }
 
 /* Tablet Viewport */
